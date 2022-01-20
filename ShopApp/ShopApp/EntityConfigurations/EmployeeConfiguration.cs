@@ -19,7 +19,7 @@ namespace ShopApp.EntityConfigurations
             builder.Property(p => p.FirstName).IsRequired().HasColumnName("FirstName").HasMaxLength(50);
             builder.Property(p => p.LastName).IsRequired().HasColumnName("LastName").HasMaxLength(50);
             builder.Property(p => p.HiredDate).IsRequired().HasColumnName("HiredDate").HasMaxLength(7);
-            builder.Property(p => p.DateOfBirth).HasColumnType("DateOfBirth");
+            builder.Property(p => p.DateOfBirth).HasColumnName("DateOfBirth");
 
             builder.HasOne(d => d.Office)
                 .WithMany(p => p.Employees)
