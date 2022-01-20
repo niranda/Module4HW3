@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using ShopApp.Entities;
+using ShopApp.EntityConfigurations;
 
 namespace ShopApp
 {
@@ -28,7 +30,6 @@ namespace ShopApp
             modelBuilder.ApplyConfiguration(new TitleConfiguration());
             modelBuilder.ApplyConfiguration(new EmployeeProjectConfiguration());
             modelBuilder.ApplyConfiguration(new ProjectConfiguration());
-
         }
     }
 }
